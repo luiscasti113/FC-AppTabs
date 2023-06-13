@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <div class="title">FC APP</div>
+  </div>
+  <div class="heart-rate-container">
+    <div class="heart-rate-circle">
+      <svg class="heart-rate-progress" viewBox="0 0 100 100">
+        <circle class="progress-background" cx="50" cy="50" r="45"></circle>
+        <circle class="progress-bar" cx="50" cy="50" r="45" [style.strokeDasharray]="calculateStrokeDashArray()" [style.strokeDashoffset]="calculateStrokeDashOffset()" [style.stroke]="getBorderColor()"></circle>
+      </svg>
+      <ion-icon name="heart" class="heart-icon"></ion-icon>
+      
+    </div>
+    <div class="heart-rate-value">{{ heartRate }}%</div>
+  </div>
+
+  <hr>
+
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col class="color-description-container">
+        <div class="color-description">
+          <div class="color green"></div>
+          <div class="description">Buena</div>
+        </div>
+        <div class="color-description">
+          <div class="color yellow"></div>
+          <div class="description">Regular</div>
+        </div>
+        <div class="color-description">
+          <div class="color red"></div>
+          <div class="description">Mala</div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+    <!-- Contenedor que medira la frecuencia -->
+    <ion-content>
+      <div class="input-container">
+        <div class="question">¿Cuál es tu frecuencia cardíaca?</div>
+        <input type="text" class="heart-rate-input" placeholder="Ingrese su edad">
+        <button class="calculate-button">Calcular</button>
+      </div>
+    </ion-content>
+
+  
+</ion-content>

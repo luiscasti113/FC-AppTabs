@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ayuda
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-img class="ayuda"
+  src="/assets/Imagenes/help.png"
+  alt="help"> </ion-img>
+    <h3 style="text-align: center; margin-top: 1px;" >¿En qué podemos ayudarte?</h3>
+  <div class="lista">
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Cómo calcula la frecuencia cardiaca?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Por medio del dispositivo wearable 
+          y se hace una fórmula matemática para saber si es óptima la frecuencia cardiaca.</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Guarda mi información en algún registro?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Por ahora no, ya que es una versión beta.</div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Qué hago si la app no funciona?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Reiniciar la aplicación y si esto no funciona, llamar al soporte técnico.</div>
+      </ion-accordion>
+      <ion-accordion value="fourth">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Cómo puedo contactar a la empresa?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Por medio de correo electróninco únicamente.</div>
+      </ion-accordion>
+      <ion-accordion value="fifth">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Cómo saber si mi frecuencia cardiaca es buena?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">La aplicación le dirá si su frecuencia cardiaca es óptina o no.</div>
+      </ion-accordion>
+      <ion-accordion value="sixth">
+        <ion-item slot="header" color="light">
+          <ion-label>¿Cómo funciona la app?</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Por medio del dispositivo wearable que mide la frecuencia cardiaca y 
+          le envía la información a la aplicación para saber si es buena o no su frecuencia cardiaca.
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+</div>
+</ion-content>
